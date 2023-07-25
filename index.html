@@ -1,11 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind & daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <title>Fruit-Burst</title>
-</head>
-<body>
-    
-</body>
+    <!-- tailwind-custom-css -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#F85559",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- style-css -->
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-lato">
+    <!-- header -->
+    <header>
+      <!-- nav -->
+      <nav class="container mx-auto my-10 px-3 lg:px-0">
+        <div
+          class="navbar lg:bg-primary text-black lg:text-white rounded-full px-5 py-2 lg:py-6 grid lg:grid-cols-3"
+        >
+          <div class="hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-semibold text-lg">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="flex justify-center items-center">
+              <img class="w-8 lg:w-12" src="./images/logo.png" alt="logo" />
+              <a class="btn btn-ghost normal-case text-xl lg:text-4xl"
+                >Fruit Burst</a
+              >
+            </div>
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 -left-40 z-[1] p-2 shadow bg-[#f85558d3] rounded-box w-52 text-white font-bold space-y-2 py-4"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+                <div class="form-control relative">
+                    <input
+                    type="text"
+                    placeholder="Search"
+                    class="input input-bordered w-full "
+                    />
+                    <i class="fa-solid fa-magnifying-glass absolute text-black right-5 bottom-3 text-sm"></i>
+                </div>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hidden lg:block">
+            <div class="form-control relative">
+                <input
+                type="text"
+                placeholder="Search"
+                class="input input-bordered w-24 md:w-auto "
+                />
+                <i class="fa-solid fa-magnifying-glass absolute text-black right-5 bottom-2 text-xl"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
