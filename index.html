@@ -341,42 +341,42 @@
             </p>
           </div>
           <div class="right-timer">
-            <div class="grid grid-flow-col gap-5 text-center">
+            <div class="grid grid-flow-col gap-3 lg:gap-5 text-center">
               <div class="flex flex-col items-center justify-center">
                 <span class="countdown font-mono md:text-5xl text-3xl">
                   <span
-                    class="me-4 font-extrabold"
+                    class="lg:me-6 me-3  font-extrabold  "
                     style="--value: 15"
                   ></span>
-                  :
+                  <i class="fa-solid fa-ellipsis-vertical flex items-center justify-center md:mt-4 mt-2 md:text-xl text-sm font-semibold text-[#494848]"></i>
                 </span>
-                <span class="md:me-8 text-xs md:text-base me-7 mt-2"> Days</span>
+                <span class="md:me-8 text-xs md:text-base me-3 mt-2"> Days</span>
               </div>
               <div class="flex flex-col">
                 <span class="countdown font-mono md:text-5xl text-3xl">
                   <span
-                    class="me-4 font-extrabold"
+                    class="lg:me-6 me-3 font-extrabold "
                     style="--value: 10"
                   ></span>
-                  :
+                  <i class="fa-solid fa-ellipsis-vertical flex items-center justify-center md:mt-4 mt-2 md:text-xl text-sm font-semibold text-[#494848]"></i>
                 </span>
-                <span class="md:me-8 text-xs md:text-base me-7 mt-2">Hours</span>
+                <span class="md:me-8 text-xs md:text-base me-5 mt-2">Hours</span>
               </div>
-              <div class="flex flex-col">
+              <div class="flex flex-col md:-me-4 -me-2">
                 <span class="countdown font-mono md:text-5xl text-3xl">
                   <span
-                    class="me-4 font-extrabold"
+                    class="lg:me-4 me-3 font-extrabold "
                     style="--value: 24"
                   ></span>
-                  :
+                  <i class="fa-solid fa-ellipsis-vertical flex items-center justify-center md:mt-4 mt-2 md:text-xl text-sm font-semibold text-[#494848]"></i>
                 </span>
-                <span class="md:me-7 text-xs md:text-base me-6 mt-2"> Minutes</span>
+                <span class="md:me-7 text-xs md:text-base me-4 mt-2"> Minutes</span>
               </div>
               <div class="flex flex-col">
                 <span class="countdown font-mono md:text-5xl text-3xl">
                   <span class="font-extrabold" style="--value: 24"></span>
                 </span>
-                <span class="text-xs md:text-base me-2 mt-2">Seconds</span>
+                <span class="text-xs md:text-base me-1 mt-2">Seconds</span>
               </div>
             </div>
           </div>
@@ -386,7 +386,7 @@
         >
           <div class="card bg-white p-5 border-2 border-[#eceaea] rounded-lg"> 
             <figure class="px-10 pt-10">
-              <img src="./images/fruit6.png" alt="fruit" class="" />
+              <img src="./images/fruit6.png" alt="fruit" class="w-24" />
             </figure>
             <div class="card-body items-center text-center space-y-3">
               <h2 class="font-bold text-2xl">12.90$ - 18.85$</h2>
@@ -408,7 +408,7 @@
                   type="radio"
                   name="rating-1"
                   class="bg-primary mask mask-star-2 mask-half-1"
-                  checked
+                 
                 />
                 <input
                   type="radio"
@@ -423,7 +423,7 @@
                 <input
                   type="radio"
                   name="rating-1"
-                  class="bg-primary me-3 mask mask-star-2 mask-half-2"
+                  class="bg-primary me-3 mask mask-star-2 mask-half-2"  checked
                 />
                 <input
                   type="radio"
@@ -483,7 +483,7 @@
                         type="radio"
                         name="rating-10"
                         class="bg-primary mask mask-star-2 mask-half-1"
-                        checked
+                        
                       />
                       <input
                         type="radio"
@@ -498,7 +498,7 @@
                       <input
                         type="radio"
                         name="rating-10"
-                        class="bg-primary me-3 mask mask-star-2 mask-half-2"
+                        class="bg-primary me-3 mask mask-star-2 mask-half-2"  checked
                       />
                       <input
                         type="radio"
@@ -563,7 +563,7 @@
                   type="radio"
                   name="rating-2"
                   class="bg-primary mask mask-star-2 mask-half-1"
-                  checked
+                 
                 />
                 <input
                   type="radio"
@@ -579,6 +579,7 @@
                   type="radio"
                   name="rating-2"
                   class="bg-primary me-3 mask mask-star-2 mask-half-2"
+                 
                 />
                 <input
                   type="radio"
@@ -593,7 +594,7 @@
                 <input
                   type="radio"
                   name="rating-2"
-                  class="bg-primary mask mask-star-2 mask-half-1"
+                  class="bg-primary mask mask-star-2 mask-half-1" checked
                 />
                 <input
                   type="radio"
@@ -619,60 +620,57 @@
                       amazing and fresh fruits.
                     </p>
                     <div class="rating rating-md rating-half">
+                      <input type="radio" name="rating-2" class="rating-hidden" />
                       <input
                         type="radio"
-                        name="rating-10"
-                        class="rating-hidden"
-                      />
-                      <input
-                        type="radio"
-                        name="rating-10"
+                        name="rating-2"
                         class="bg-primary mask mask-star-2 mask-half-1"
                       />
                       <input
                         type="radio"
-                        name="rating-10"
+                        name="rating-2"
                         class="bg-primary me-3 mask mask-star-2 mask-half-2"
                       />
                       <input
                         type="radio"
-                        name="rating-10"
+                        name="rating-2"
                         class="bg-primary mask mask-star-2 mask-half-1"
-                        checked
+                       
                       />
                       <input
                         type="radio"
-                        name="rating-10"
+                        name="rating-2"
                         class="bg-primary me-3 mask mask-star-2 mask-half-2"
                       />
                       <input
                         type="radio"
-                        name="rating-10"
+                        name="rating-2"
                         class="bg-primary mask mask-star-2 mask-half-1"
                       />
                       <input
                         type="radio"
-                        name="rating-10"
+                        name="rating-2"
+                        class="bg-primary me-3 mask mask-star-2 mask-half-2"
+                        
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
+                        class="bg-primary mask mask-star-2 mask-half-1"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-2"
                         class="bg-primary me-3 mask mask-star-2 mask-half-2"
                       />
                       <input
                         type="radio"
-                        name="rating-10"
-                        class="bg-primary mask mask-star-2 mask-half-1"
+                        name="rating-2"
+                        class="bg-primary mask mask-star-2 mask-half-1" checked
                       />
                       <input
                         type="radio"
-                        name="rating-10"
-                        class="bg-primary me-3 mask mask-star-2 mask-half-2"
-                      />
-                      <input
-                        type="radio"
-                        name="rating-10"
-                        class="bg-primary mask mask-star-2 mask-half-1"
-                      />
-                      <input
-                        type="radio"
-                        name="rating-10"
+                        name="rating-2"
                         class="bg-primary mask mask-star-2 mask-half-2"
                       />
                     </div>
@@ -718,7 +716,7 @@
                   type="radio"
                   name="rating-3"
                   class="bg-primary mask mask-star-2 mask-half-1"
-                  checked
+                  
                 />
                 <input
                   type="radio"
@@ -793,7 +791,6 @@
                         type="radio"
                         name="rating-10"
                         class="bg-primary mask mask-star-2 mask-half-1"
-                        checked
                       />
                       <input
                         type="radio"
@@ -873,7 +870,7 @@
                   type="radio"
                   name="rating-10"
                   class="bg-primary mask mask-star-2 mask-half-1"
-                  checked
+                  
                 />
                 <input
                   type="radio"
@@ -898,7 +895,7 @@
                 <input
                   type="radio"
                   name="rating-10"
-                  class="bg-primary me-3 mask mask-star-2 mask-half-2"
+                  class="bg-primary me-3 mask mask-star-2 mask-half-2" checked
                 />
                 <input
                   type="radio"
@@ -973,7 +970,7 @@
                       <input
                         type="radio"
                         name="rating-10"
-                        class="bg-primary me-3 mask mask-star-2 mask-half-2"
+                        class="bg-primary me-3 mask mask-star-2 mask-half-2" checked
                       />
                       <input
                         type="radio"
@@ -1352,7 +1349,7 @@
           >Fruit Burst</a
         >
       </div>
-      <div class="flex flex-wrap justify-center gap-8">
+      <div class="grid grid-cols-3 lg:grid-cols-6 gap-8">
         <a class="link link-hover">Home</a>
         <a class="link link-hover">About us</a>
         <a class="link link-hover">Shop</a>
